@@ -1,0 +1,73 @@
+html, body, img, div {
+    margin: 0;
+    padding: 0;
+    all: unset;
+}
+
+.head-bg {
+    width: 100%;
+    z-index: -10;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'WorkSans';
+    background-color: hsl(275, 100%, 97%);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.mainBlock {
+    border-radius: 16px;
+    position: relative;
+    top: -100px;
+    width: 800px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.title-block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+
+}
+.title {
+    /*cursor: pointer;*/
+    font-family: 'WorkSans Bold';
+    font-size: 62px;
+}
+
+.name-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.hidden{
+    display: none;
+}
+.active-icon{
+    cursor: pointer;
+}
+
+
+
+@font-face {
+    font-family: "WorkSans";
+    src: local("WorkSans"),
+    url("fonts/static/WorkSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "WorkSans Bold";
+    src: local("WorkSans"),
+    url("fonts/static/WorkSans-Bold.ttf") format("truetype");
+}
