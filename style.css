@@ -4,10 +4,7 @@ html, body, img, div {
     all: unset;
 }
 
-.head-bg {
-    width: 100%;
-    z-index: -10;
-}
+
 
 body {
     overflow-x: hidden;
@@ -19,42 +16,11 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-
-
-.mainBlock {
-    border-radius: 16px;
-    position: relative;
-    top: -100px;
-    width: 800px;
-    margin: auto;
-    display: block;
-    padding: 20px;
-    background-color: #fff;
+.question{
+    transition: all .15s ease-in;
 }
-
-.title-block {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-
-
-}
-.title {
-    /*cursor: pointer;*/
-    font-family: 'WorkSans Bold';
-    font-size: 62px;
-}
-
-.name-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-.hidden{
-    display: none;
-}
-.active-icon{
+.question:hover{
+    color: #AD28EB ;
     cursor: pointer;
 }
 
@@ -70,4 +36,144 @@ body {
     font-family: "WorkSans Bold";
     src: local("WorkSans"),
     url("fonts/static/WorkSans-Bold.ttf") format("truetype");
+}
+@media (min-width: 1000px){
+    .head-bg {
+        width: 100%;
+        z-index: -10;
+    }
+    .mainBlock {
+        border-radius: 16px;
+        position: relative;
+        top: -100px;
+        width: 800px;
+        margin: auto;
+        display: block;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .title-block {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+
+    }
+    .title {
+        /*cursor: pointer;*/
+        font-family: 'WorkSans Bold';
+        font-size: 62px;
+    }
+
+    .name-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .hidden{
+        display: none;
+    }
+    .active-icon{
+        cursor: pointer;
+    }
+}
+@media (max-width: 999px) and (min-width: 500px){
+    h2{
+        font-size: 18px;
+    }
+    .head-bg {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        z-index: -10;
+    }
+    .mainBlock {
+        border-radius: 16px;
+        position: relative;
+        top: -100px;
+        width: 450px;
+        margin: auto;
+        display: block;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .title-block {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+
+    }
+    .title {
+        /*cursor: pointer;*/
+        font-family: 'WorkSans Bold';
+        font-size: 45px;
+    }
+
+    .name-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .hidden{
+        display: none;
+    }
+    .active-icon{
+        cursor: pointer;
+    }
+}
+@media (max-width: 500px){
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .head-bg {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+        z-index: -10;
+    }
+    .mainBlock {
+        box-shadow: 0px 0px hsl(279, 30%, 79%);
+        border-radius: 16px;
+        position: relative;
+        top: -200px;
+        width: 320px;
+        margin: auto;
+        display: block;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .title-block {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+
+    }
+    .title {
+        /*cursor: pointer;*/
+        font-family: 'WorkSans Bold';
+        font-size: 32px;
+    }
+
+    .name-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .hidden{
+        display: none;
+    }
+    .active-icon{
+        cursor: pointer;
+    }
 }
